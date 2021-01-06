@@ -317,7 +317,7 @@ void DrawStage()
 			if (stagemap[stage][j][i] == 0) // ºó°ø°£
 			{
 				SetCurrentCursorPos(i * 2, j);
-				printf(" ");
+				printf("  ");
 			}
 			else if (stagemap[stage][j][i] == 4)
 			{
@@ -1026,9 +1026,9 @@ void Stage2_Open()
 		gameBoardInfo[6][17] = 0;
 		gameBoardInfo[5][17] = 0;
 		SetCurrentCursorPos(34, 5);
-		printf(" ");
+		printf("  ");
 		SetCurrentCursorPos(34, 6);
-		printf(" ");
+		printf("  ");
 		opentest = 2;
 	}
 	if (opentest == 3)
@@ -1036,9 +1036,9 @@ void Stage2_Open()
 		gameBoardInfo[11][25] = 0;
 		gameBoardInfo[11][26] = 0;
 		SetCurrentCursorPos(50, 11);
-		printf(" ");
+		printf("  ");
 		SetCurrentCursorPos(52, 11);
-		printf(" ");
+		printf("  ");
 		opentest = 4;
 	}
 	if (opentest == 5)
@@ -1046,9 +1046,9 @@ void Stage2_Open()
 		gameBoardInfo[16][17] = 0;
 		gameBoardInfo[17][17] = 0;
 		SetCurrentCursorPos(34, 16);
-		printf(" ");
+		printf("  ");
 		SetCurrentCursorPos(34, 17);
-		printf(" ");
+		printf("  ");
 		opentest = 6;
 	}
 }
@@ -1193,7 +1193,7 @@ void Delete_ANPC(int n)
 	}
 
 	else
-		printf(" ");
+		printf("  ");
 	SetCurrentCursorPos(curPosX_ANPC[n], curPosY_ANPC[n]);
 }
 
@@ -1381,7 +1381,7 @@ void Delete_BNPC(int n)
 	}
 
 	else
-		printf(" ");
+		printf("  ");
 	SetCurrentCursorPos(curPosX_BNPC[n], curPosY_BNPC[n]);
 }
 
@@ -1578,7 +1578,7 @@ void Delete_DNPC(int n)
 	}
 
 	else
-		printf(" ");
+		printf("  ");
 	SetCurrentCursorPos(curPosX_DNPC[n], curPosY_DNPC[n]);
 }
 
@@ -1711,12 +1711,12 @@ void Delete_GUN()
 	else if (gameBoardInfo[curPosY_GUN][curPosX_GUN / 2] == 6)
 	{
 		gameBoardInfo[curPosY_GUN][curPosX_GUN / 2] = 0;
-		printf(" ");
+		printf("  ");
 		SetCurrentCursorPos(curPosX_GUN, curPosY_GUN);
 	}
 	else
 	{
-		printf(" ");
+		printf("  ");
 		SetCurrentCursorPos(curPosX_GUN, curPosY_GUN);
 	}
 }
