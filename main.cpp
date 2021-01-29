@@ -8,6 +8,7 @@
 #include "UI.h"
 #pragma comment(lib,"winmm.lib")
 
+
 #define ONE 49
 #define TWO 50   
 #define THREE 51
@@ -264,7 +265,7 @@ void DrawCharacterboard(int sign)
 void printstory()
 {
 	system("cls");
-	//PlaySound(TEXT("키보드.wav"), NULL, SND_ASYNC);
+	PlaySound(TEXT("C:\Users\jisue\source\repos\game\game\키보드.wav"), NULL, SND_ASYNC);
 	char story[7][150] = {
 		{ "<게임 시나리오>" },
 	{ "인간의 과도한 유전자 조작으로 지구에는 좀비가 나타났다!" },
